@@ -6,7 +6,6 @@ import {
   Share2,
   Table,
   Compass,
-  BookOpen,
   ArrowRight,
   GitBranch,
   Hash,
