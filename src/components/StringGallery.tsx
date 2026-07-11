@@ -321,7 +321,7 @@ export const StringGallery: React.FC = () => {
         history="Donald Knuth (pictured) and Vaughan Pratt conceived the KMP algorithm in 1970 to build faster text search compilers. Michael Rabin and Richard Karp followed in 1987 with rolling hashes to evaluate multiple words simultaneously."
         complexity={def.complexity}
         terms={['Time Complexity', 'Space Complexity', 'Rolling Hash']}
-        imageUrl="https://upload.wikimedia.org/wikipedia/commons/a/ae/Donald_Knuth_at_Stanford_in_2005.jpg"
+        imageUrl="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Donald_Ervin_Knuth_%28cropped%29.jpg/500px-Donald_Ervin_Knuth_%28cropped%29.jpg"
         onEnter={() => setShowPlacard(false)}
       />
     );
@@ -351,7 +351,6 @@ export const StringGallery: React.FC = () => {
               value={selectedAlgo}
               onChange={(e) => {
                 setSelectedAlgo(e.target.value as any);
-                setShowPlacard(true);
               }}
               className="bg-slate-900 border border-slate-800 text-slate-200 text-sm font-bold py-2 px-3 rounded-xl focus:outline-none focus:border-cyan-500 transition-colors"
             >

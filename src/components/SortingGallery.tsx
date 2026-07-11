@@ -631,7 +631,6 @@ export const SortingGallery: React.FC = () => {
               value={selectedAlgo}
               onChange={(e) => {
                 setSelectedAlgo(e.target.value as any);
-                setShowPlacard(true);
               }}
               className="bg-slate-900 border border-slate-800 text-slate-200 text-sm font-bold py-2 px-3 rounded-xl focus:outline-none focus:border-cyan-500 transition-colors"
             >
