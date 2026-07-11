@@ -3,7 +3,7 @@ import { BookOpen, Compass, Award, Cpu } from 'lucide-react';
 
 export const OverviewGallery: React.FC = () => {
   return (
-    <div className="space-y-8 max-w-4xl mx-auto py-6 px-4 md:px-8 animate-fade-in overflow-y-auto max-h-[85vh] text-[#1c1c1c] font-serif">
+    <div className="space-y-8 py-6 animate-fade-in text-[#1c1c1c] font-serif">
       {/* Exhibit Heading */}
       <div className="border-b border-[#2d2d2d] pb-4 space-y-2">
         <div className="inline-flex items-center gap-1.5 bg-[#1b365d]/10 border border-[#1b365d]/25 px-3 py-1 text-xs font-bold text-[#1b365d] font-sans">
