@@ -1,5 +1,4 @@
-import React from 'react';
-import { BookOpen, Compass, Award, Cpu } from 'lucide-react';
+import { Landmark, Compass, Award, Cpu } from 'lucide-react';
 
 export const OverviewGallery: React.FC = () => {
   return (
@@ -7,7 +6,7 @@ export const OverviewGallery: React.FC = () => {
       {/* Exhibit Heading */}
       <div className="border-b border-[#2d2d2d] pb-4 space-y-2">
         <div className="inline-flex items-center gap-1.5 bg-[#1b365d]/10 border border-[#1b365d]/25 px-3 py-1 text-xs font-bold text-[#1b365d] font-sans">
-          <BookOpen size={12} />
+          <Landmark size={12} />
           <span>Exhibition Introduction</span>
         </div>
         <h1 className="text-3xl md:text-4xl font-black text-[#1c1c1c] tracking-tight">

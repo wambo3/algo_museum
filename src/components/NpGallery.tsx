@@ -251,7 +251,7 @@ export const NpGallery: React.FC = () => {
         history="Richard Karp (pictured) proved the Traveling Salesman Problem is NP-complete in 1972, showing that a huge family of hard computational puzzles are mathematically equivalent. In 1983, Kirkpatrick, Gelatt, and Vecchi introduced simulated annealing to find near-optimal routes using thermodynamic analogies."
         complexity={def.complexity}
         terms={['Time Complexity', 'Space Complexity', 'NP-Hard']}
-        imageUrl="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Karp_mg_7725-b.cr2.jpg/500px-Karp_mg_7725-b.cr2.jpg"
+        imageUrl="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Karp_mg_7725-b.cr2.jpg/500px-Karp_mg_7725-b.cr2.jpg"
         onEnter={() => setShowPlacard(false)}
       />
     );
