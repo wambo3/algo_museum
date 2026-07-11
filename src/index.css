@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Lora', Georgia, 'Times New Roman', serif;
+    background-color: #fcfaf2;
+    color: #1c1c1c;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #1c1c1c;
+  }
+  code, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+  
+  /* Reset all rounding and shadows to give a classic, crisp catalog/museum format */
+  *, *::before, *::after {
+    border-radius: 0px !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+}
+
+:root {
+  --primary: #1b365d; /* Museum Navy */
+  --primary-glow: rgba(27, 54, 93, 0.05);
+  --secondary: #722f37; /* Wine Burgundy */
+  --accent: #1b365d;
+  --success: #2e5a44; /* High-contrast Forest Green */
+  --danger: #a13d2d; /* Clay Red */
+  --warning: #b58900; /* Dark Amber */
+  --bg-dark: #fcfaf2;
+  --bg-card: #f4f0e6;
+  --border-main: #2d2d2d;
+  --text-main: #1c1c1c;
+  --text-muted: #5a5a5a;
+}
+
+/* Strict Layout grids and margins (8px multiples) */
+.glass-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border-main);
+}
+
+.glass-panel-neon {
+  background: var(--bg-card);
+  border: 2px solid var(--border-main);
+}
+
+/* Custom Scrollbars in dark slate tones */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f4f0e6;
+  border-left: 1px solid var(--border-main);
+}
+::-webkit-scrollbar-thumb {
+  background: #2d2d2d;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Fade In animation (subtle opacity shift, no translation drift) */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom active lines for debugger */
+.debugger-active-line {
+  background: rgba(27, 54, 93, 0.08);
+  border-left: 4px solid var(--primary);
+}
+
+/* Styling override for select, inputs and buttons for museum crisp borders */
+input, select, button, textarea {
+  border: 1px solid var(--border-main) !important;
+  background-color: #fcfaf2 !important;
+  color: #1c1c1c !important;
+}
+
+button:hover {
+  background-color: #f4f0e6 !important;
+}
+
+button:active {
+  background-color: #eae5d8 !important;
+}
+
+/* High contrast selection tags */
+.tag-navy {
+  background-color: rgba(27, 54, 93, 0.08);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.museum-frame {
+  position: relative;
+  background-image: url('/frame.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 16% 16% 14% 16%;
+  width: 100%;
+  max-width: 500px;
+  min-height: 500px;
+  aspect-ratio: 1 / 1;
+  margin: 1.5rem auto;
+  box-sizing: border-box;
+}
